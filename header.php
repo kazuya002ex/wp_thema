@@ -10,6 +10,17 @@
 </head>
 <body>
     <header>
-      <h1>LOGO</h1>
+      <div class="flex-box">
+        <div>
+          <h1>
+            <a href="<?php echo esc_url( site_url() ); ?>">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png">
+            </a>
+          </h1>
+        </div>
+        <div class="searchbox">
+          <?php get_search_form(); ?>
+        </div>
+      </div>
       <?php wp_nav_menu( $args ); ?>
     </header>
