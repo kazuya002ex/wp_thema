@@ -10,5 +10,6 @@
 </head>
 <body>
     <header>
-      <h1>Wordpress!</h1>
+      <h1>LOGO</h1>
+      <?php wp_nav_menu( $args ); ?>
     </header>
